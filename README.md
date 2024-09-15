@@ -1,2 +1,2 @@
 # javascript-w3c
- Aprendendo JS
+ Aprendendo JS pelo site W3Schools.
