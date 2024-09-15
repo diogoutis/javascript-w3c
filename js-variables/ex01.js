@@ -1,1 +1,1 @@
-let carName = 'Volvo'
+let carName = 'Volvo';
