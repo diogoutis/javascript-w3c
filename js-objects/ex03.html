@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS objects 03</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let ano = new Date().getFullYear();
+
+        const person = {
+            name: 'Gustavo',
+            age: 46
+        };
+
+        document.getElementById('demo').innerHTML = `${person.name} ${ano - 1978}`;
+    </script>
+</body>
+</html>
