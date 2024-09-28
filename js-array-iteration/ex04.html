@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS array iteration 04</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        const num = [45, 4, 9, 16, 25];
+        const over18 = num.filter(myFunction);
+
+        document.getElementById('demo').innerHTML = over18;
+
+        function myFunction(value, index, array) {
+            return value > 18;
+        }
+    </script>
+</body>
+</html>
