@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS dates 05</title>
+    <style>
+        p {
+            width: 50%;
+            margin: 0 auto 30px auto;
+            border: 2px solid black;
+            padding: 10px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p:nth-child(even) {
+            background-color: rgb(44, 44, 44);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+
+    <script>
+        const d1 = new Date(2024, 08, 28, 10, 33, 30);
+        document.getElementById('demo1').innerHTML =  d1;
+
+        const d2 = new Date(2024, 08, 28, 10, 33);
+        document.getElementById('demo2').innerHTML = d2;
+
+        const d3 = new Date(2024, 08, 28, 10);
+        document.getElementById('demo3').innerHTML = d3;
+
+        const d4 = new Date(2024, 08, 28);
+        document.getElementById('demo4').innerHTML = d4;
+
+        const d5 = new Date(2024, 08);
+        document.getElementById('demo5').innerHTML = d5;
+
+        const d6 = new Date(2024);
+        document.getElementById('demo6').innerHTML = d6;
+    </script>
+</body>
+</html>
