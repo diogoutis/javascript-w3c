@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS dates 09</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+        const d = new Date();
+        document.getElementById('demo1').innerHTML = d;
+        document.getElementById('demo2').innerHTML = d.toDateString();
+        document.getElementById('demo3').innerHTML = d.toUTCString();
+        document.getElementById('demo4').innerHTML = d.toISOString();
+    </script>
+</body>
+</html>
