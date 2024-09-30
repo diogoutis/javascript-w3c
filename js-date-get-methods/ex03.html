@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS date get methods 03</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        const months1 = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+        'August', 'September', 'October', 'November', 'December'];
+            
+        const d1 = new Date('2021-03-25');
+        let month1 = months1[d1.getMonth()];
+        document.getElementById('demo1').innerHTML = month1;
+
+        const months2 = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+        const d2 = new Date();
+        let month2 = months2[d2.getMonth()];
+        document.getElementById('demo2').innerHTML = month2;        
+    </script>
+</body>
+</html>
