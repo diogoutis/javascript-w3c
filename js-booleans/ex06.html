@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS booleans 06</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        let x = new Boolean(false);
+        let y = new Boolean(false);
+
+        let d = document.getElementById('demo');
+
+        d.innerHTML = (x==y) + `<br>`;
+        d.innerHTML += (x===y);
+
+        /* comparar dois objetos JavaScript sempre retorna false */
+    </script>
+</body>
+</html>
