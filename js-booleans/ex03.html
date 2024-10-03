@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS booleans 03</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        let demo = document.getElementById('demo');
+        let zero = 0;
+        let zeroNegativo = -0;
+        let stringVazia = '';
+        let valorIndefinido;
+        let valorNull = null;
+        let valorFalse = false;
+        let valorNaN = 10 / 'Sheldon';
+        
+        demo.innerHTML = '0: ' + Boolean(zero) + `<br>`;
+        demo.innerHTML += '-0: ' + Boolean(zeroNegativo) + `<br>`;
+        demo.innerHTML +='String vazia: ' + Boolean(stringVazia) + `<br>`;
+        demo.innerHTML += 'Valor indefinido: ' + Boolean(valorIndefinido) + `<br>`;
+        demo.innerHTML += 'Valor null: ' + Boolean(valorNull) + `<br>`;
+        demo.innerHTML += 'Valor falso: ' + Boolean(valorFalse) + `<br>`;
+        demo.innerHTML += 'Valor NaN: ' + Boolean(valorNaN);
+    </script>
+</body>
+</html>
