@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS comparisons 03</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        let name;
+        let text = 'missing';
+        let result = name ?? text;
+        document.getElementById('demo').innerHTML = 'The name is ' + result;
+    </script>
+</body>
+</html>
