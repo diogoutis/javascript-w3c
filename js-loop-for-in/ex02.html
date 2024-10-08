@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS loop for in 02</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>For In Loops</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const num = [45, 4, 9, 16, 25];
+
+        let txt = '';
+
+        for (let x in num) {
+            txt += num[x] + '<br>';
+        }
+
+        document.getElementById('demo').innerHTML = txt;
+    </script>
+</body>
+</html>
