@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS break 01</title>
+</head>
+<body>
+    <h1>JavaScript Loops</h1>
+
+    <p>A loop with a <strong>break</strong> statement.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let text = '';
+        for (let i = 0; i < 10; i++) {
+            if (i === 3) {break};
+            text += `The numbers is ${i} <br>`;
+        }
+
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+</html>
