@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS maps 05</title>
+    <style>
+        * {
+            font-family: monospace;
+        }
+
+        #type {
+            background-color: black;
+            width: 155px;
+            color: yellow;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        #inst {
+            background-color: black;
+            width: 155px;
+            color: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Maps</h1>
+
+    <div id="type">
+        <h2>typeof Map</h2>
+        <p id="demo1"></p>
+    </div>
+
+    <div id="inst">
+        <h2>instanceOf Map</h2>
+        <p id="demo2"></p>
+    </div>
+
+    <script>
+        const fruits = new Map([
+            ['goiaba', 500],
+            ['jabuticaba', 300],
+            ['peroba', 200]
+        ]);
+
+        document.getElementById('demo1').innerHTML = typeof fruits;
+
+        document.getElementById('demo2').innerHTML = fruits instanceof Map;
+    </script>
+</body>
+</html>
