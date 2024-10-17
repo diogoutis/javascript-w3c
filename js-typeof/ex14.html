@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS typeof 14</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+
+    <h2>Array Data Type</h2>
+    <p id="demo1"></p>
+
+    <h2>Date Data type</h2>
+    <p id="demo2"></p>
+
+    <script>
+        const fruits = ['Banana', 'Orange', 'Apple'];
+        document.getElementById('demo1').innerHTML =
+        `${fruits.constructor === Array}`;
+
+        const time = new Date();
+        document.getElementById('demo2').innerHTML =
+        `${time.constructor === Date}`;
+    </script>
+</body>
+</html>
