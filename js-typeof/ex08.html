@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS typeof 08</title>
+</head>
+<body>
+    <h1>JavaScript Operators</h1>
+    <h2>The typeof Operator</h2>
+    <p>Variables can be emptied if you set the value to <strong>undefined</strong>.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let car = 'Volvo';
+        car = undefined;
+
+        document.getElementById('demo').innerHTML =
+        `<p>The value of car is ${car}</p>
+        <p>The typeof car is ${typeof car}</p>`;
+    </script>
+</body>
+</html>
