@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS typeof 05</title>
+</head>
+<body>
+    <h1>JavaScript Operators</h1>
+    <h2>The instanceof Operator</h2>
+
+    <p>The instanceof operator returns true if an object is an instance of a specified object type:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const time = new Date();
+
+        const fruits = ['apples', 'bananas', 'oranges'];
+
+        const cars = new Map([
+            ['uno', 300],
+            ['brasilia', 200],
+            ['fusca', 100]
+        ]);
+
+        const vest = new Set(['camisa', 'calção', 'chinela']);
+
+        document.getElementById('demo').innerHTML = 
+        `Date: ${time instanceof Date} <br>
+        Array: ${fruits instanceof Array} <br>
+        Map: ${cars instanceof Map} <br>
+        Set: ${vest instanceof Set}`;
+    </script>
+</body>
+</html>
