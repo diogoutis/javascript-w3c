@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS typeof 11</title>
+</head>
+<body>
+    <h1>JavaScript Operators</h1>
+    <h2>The typeof Operator</h2>
+
+    <p>Objects can ve emptied by setting the value to <strong>undefined</strong>.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let person = {firsName:'John', lastName:'Doe', age:50, eyeColor:'blue'};
+
+        person = undefined;
+        document.getElementById('demo').innerHTML = 
+        `The typeof person is ${typeof person}`;
+    </script>
+</body>
+</html>
