@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS precedence 32</title>
+</head>
+<body>
+    <h1>JavaScript Operators</h1>
+    <h2>The instanceof Operator</h2>
+
+    <p>The instaceof operator returns true if an object is an instance of a specified object:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const cars = ['Saab', 'Volvo', 'BMW'];
+
+        document.getElementById('demo').innerHTML = 
+        'Array: ' + (cars instanceof Array) +
+        '<br>String: ' + (cars instanceof String);
+    </script>
+</body>
+</html>
