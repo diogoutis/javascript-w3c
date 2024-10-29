@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS scope 05</title>
+</head>
+<body>
+    <h1>JavaScript Global Variables</h1>
+
+    <p>In HTML, global variables defined with <strong>let</strong>, will not become window variables.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let carName = 'Volvo';
+
+        document.getElementById('demo').innerHTML =
+        'I can not display ' + window.carName;
+    </script>
+</body>
+</html>
