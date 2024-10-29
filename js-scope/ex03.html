@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS scope 03</title>
+</head>
+<body>
+    <h1>JavaScript Global Variables</h1>
+
+    <p>If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        myFunction();
+
+        document.getElementById('demo').innerHTML = 'I can display ' + carName;
+
+        function myFunction() {
+            carName = 'Volvo';
+        }
+    </script>
+</body>
+</html>
