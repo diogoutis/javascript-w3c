@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS this keyword 05</title>
+</head>
+<body>
+    <h1>The JavaScript <em>This</em> Keyword</h1>
+
+    <p>In a function, by default, <strong>this</strong> refers to the global object.</p>
+
+    <p>Strict mode does not allow default binding, so <strong>this</strong> is:</p>
+    <p id="demo"></p>
+
+    <script>
+        'use strict';
+        document.getElementById('demo').innerHTML = myFunction();
+
+        function myFunction() {
+            return this;
+        }
+    </script>
+</body>
+</html>
