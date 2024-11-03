@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS strict mode 19</title>
+</head>
+<body>
+    <h1>With 'use strict':</h1>
+    <h2>Inside functions, the 'this' keyword is no longer the global object if not specified:</h2>
+
+    <script>
+        'use strict';
+        function myFunction {
+            alert(this);
+        }
+
+        myFunction();
+    </script>
+</body>
+</html>
