@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS best practices 06</title>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+
+    <p>Setting a default value to a function parameter.</p>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(x, y) {
+            if (y === undefined) {
+                y = 0;
+            }
+            return x * y;
+        }
+
+        document.getElementById('demo').innerHTML = myFunction(4);
+    </script>
+</body>
+</html>
