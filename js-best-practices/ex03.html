@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS best practices 03</title>
+</head>
+<body>
+    <h1>JavaScript Variables</h1>
+
+    <p>Remove the comment (at the beginning of the lines) to test each case:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 5;
+        // x = x + 7;
+        // x = 5 + '7';
+        // x = '5' + 7;
+        // x = 5 - 7;
+        // x = 5 - '7';
+        // x = '5' - 7;
+        // x = 5 - 'x';
+
+        document.getElementById('demo').innerHTML = x.valueOf() + ' ' + typeof x;
+    </script>
+</body>
+</html>
