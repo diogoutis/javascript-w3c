@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS mistakes 06</title>
+</head>
+<body>
+    <h1>Common JavaScript Mistakes</h1>
+
+    <p>It is a common mistakes to forget that switch statements use strict comparison.</p>
+    <p>This will work:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 10;
+        switch(x) {
+            case 10: document.getElementById('demo').innerHTML = 'Hello';
+        }
+    </script>
+</body>
+</html>
