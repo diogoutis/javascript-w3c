@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS mistakes 04</title>
+</head>
+<body>
+    <h1>Common JavaScript Mistakes</h1>
+
+    <p>In regular comparison, data type does not matter. This if statement returns true:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 10;
+        let y = '10';
+        document.getElementById('demo').innerHTML = Boolean(x == y);
+    </script>
+</body>
+</html>
