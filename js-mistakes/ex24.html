@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS mistakes 24</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+
+    <p>If you want to test if an object is not null, you must test if it not undefined first.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById('demo').innerHTML =
+        typeof myObj !== "undefined" && myObj !== null;
+    </script>
+</body>
+</html>
