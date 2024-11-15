@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS object definitions 05</title>
+</head>
+<body>
+    <h1>JavaScript Object Construtors</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+            this.nationality = 'Brazilian';
+        }
+
+        const myFather = new Person('José', 'Doe', 50, 'blue')
+        const myMother = new Person('Maria', 'Rally', 48, 'green');
+
+        document.getElementById('demo').innerHTML =
+        'My father is ' + myFather.nationality + '. My mother is ' + myMother.nationality;
+    </script>
+</body>
+</html>
