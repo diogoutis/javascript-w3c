@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS object methods 06</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <h2>The Objects.values() Methods</h2>
+    <p>Object.values() returns an array of values from an object:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firstName: 'John',
+            lastName: 'Doe',
+            age: 50,
+            eyeColor: 'blue'
+        };
+
+        let text = Object.values(person);
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+</html>
