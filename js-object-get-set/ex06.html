@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS object get/set 06</title>
+</head>
+<body>
+    <h1>JavaScript Getters and Setters</h1>
+
+    <p>Getters and setters allow you to get and set properties via methods.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const person = {
+            firstName: 'John',
+            lastName: 'Doe',
+            language: '',
+            set lang(lang) {
+                this.language = lang.toUpperCase();
+            }
+        };
+
+        person.lang = 'en';
+
+        document.getElementById('demo').innerHTML = person.language;
+    </script>
+</body>
+</html>
