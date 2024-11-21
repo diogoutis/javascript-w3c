@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS object protection 07</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <h2>The Object.isSealed() Method</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const person = {firstName: 'John', lastName: 'Doe'};
+
+        Object.seal(person);
+
+        let answer = Object.isSealed(person);
+        document.getElementById('demo').innerHTML = answer;
+    </script>
+</body>
+</html>
