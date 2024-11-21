@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS object protection 10</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <h2>The Object.freeze() Method</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+
+        Object.freeze(fruits);
+
+        let text;
+        try {
+            fruits.push('Kiwi');
+            text = fruits;
+        }
+        catch (err) {
+            text = err;
+        }
+
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+</html>
