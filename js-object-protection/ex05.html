@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS object protection 05</title>
+</head>
+<body>
+    <h1>JavaScript Objects</h1>
+    <h2>The Object.seal() Method</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        'use strict';
+
+        const person = {
+            firstName: 'John',
+            lastName: 'Doe',
+            age: 50,
+            eyeColor: 'blue'
+        };
+
+        Object.seal(person);
+
+        let text = '';
+        try {
+            delete person.age;
+            text = Object.values(person);
+        }
+        catch (err) {
+            text = err;
+        }
+
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+</html>
